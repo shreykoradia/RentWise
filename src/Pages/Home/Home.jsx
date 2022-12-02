@@ -4,6 +4,9 @@ import List from '../../components/HomeComponent/List/List'
 import Search from '../../components/HomeComponent/SearchBarFilter/Search'
 import { locationList , dataList } from '../../constants'
 import Empty from '../../components/Common/Empty/Empty'
+import DatePicker from "react-date-picker";
+
+
 import  './styles.css'
 
 
@@ -13,7 +16,7 @@ const Home = () => {
     const [selectedCategory, setselectedCategory] = useState(null);
     const [locations , setLocations] = useState([]);
     const [selectedPrice , setSelectedPrice] = useState([15000 , 50000]);
-    const handleChangedPrice = (event , value) => setSelectedPrice(value);
+    const [startDate, OnChange] = useState(new Date());
     const [list, setList] = useState(dataList);
     const [inputSearch , setInputSearch] = useState('');
     const [resultFound,setResultFound] = useState(false);
@@ -30,6 +33,8 @@ const Home = () => {
         item.id === id ? {...item , checked: !item.checked} : item );
         setLocations(changeCheckedLocation)
     };
+    // handleChangedPrice Functionality 
+    const handleChangedPrice = (event , value) => setSelectedPrice(value);
 
     //For applying filters storing in Updated List
 
@@ -38,7 +43,7 @@ const Home = () => {
     // applying Filter Functionality for List Component 
 
         const applyFilters = ()=>{
-
+            
         // applying category filter
         if(selectedCategory){
             updatedList = updatedList.filter(
@@ -70,6 +75,11 @@ const Home = () => {
             );
           }
 
+        // applying Date Filters
+        // if(startDate){
+        // updatedList = updatedList.filter( d => new Date(d.Date) - new Date() > 0)
+        // }
+
         setList(updatedList);
 
         !updatedList.length ? setResultFound(false) : setResultFound(true); 
@@ -85,6 +95,11 @@ const Home = () => {
     <div className='home'> 
         {/* Search Bar Component goes here  */}
         <Search value={inputSearch} changeInput={e => setInputSearch(e.target.value)} />
+        {/* Date Picker goes here */}
+        <div>
+        <p> MoveIn Date :</p>
+        <DatePicker value={startDate} onChange={OnChange} />
+        </div>
     <div className="home_panelList-wrap">
         <div className="home_panel-wrap">
          {/* Filter Panel Goes here */}

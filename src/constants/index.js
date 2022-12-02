@@ -56,7 +56,9 @@ export const dataList =  [
         location : 'mumbai',
         category : 'Buildings',
         price: '25000',
-        image : '/assets/building1.jpg'
+        image : '/assets/building1.jpg',
+        Date : 2/12/2023
+        
     
     },
     {
@@ -65,7 +67,8 @@ export const dataList =  [
         location : 'bangalore', 
         category : 'Buildings',
         price: '35000',
-        image : '/assets/building-2.jpg'
+        image : '/assets/building-2.jpg',
+        Date : 3/12/2023
     },
     {
         id : 3,
@@ -73,7 +76,8 @@ export const dataList =  [
         location : 'hyderabad', 
         category : 'Buildings',
         price: '32000',
-        image : '/assets/building3.jpg'
+        image : '/assets/building3.jpg',
+        Date : 4/12/2023
     },
     {
         id : 4,
@@ -81,7 +85,8 @@ export const dataList =  [
         location : 'ahmedabad', 
         category : 'Buildings',
         price: '38000',
-        image : '/assets/building4.jpg'
+        image : '/assets/building4.jpg',
+        Date : 12/13/2022
     },
     {
         id : 5,
@@ -89,7 +94,8 @@ export const dataList =  [
         location : 'mumbai', 
         category : 'Buildings',
         price: '50000',
-        image : '/assets/building5.jpg'
+        image : '/assets/building5.jpg',
+        Date : 12/25/2022
     },
     {
         id : 6,
@@ -97,7 +103,8 @@ export const dataList =  [
         location : 'bangalore', 
         category : 'Buildings',
         price: '45000',
-        image : '/assets/building7.jpg'
+        image : '/assets/building7.jpg',
+        Date : 12/23/2022
     },
     
     {
@@ -106,7 +113,8 @@ export const dataList =  [
         location : 'chennai', 
         category : 'Bungalows',
         price: '25000',
-        image : '/assets/house-interior.jpg'
+        image : '/assets/house-interior.jpg',
+        Date : 12/24/2022
     },
     {
         id : 8,
@@ -114,7 +122,8 @@ export const dataList =  [
         location : 'mumbai', 
         category : 'Bungalows',
         price: '30000',
-        image : '/assets/house2.jpg'
+        image : '/assets/house2.jpg',
+        Date : 12/21/2022
     },
     {
         id : 9,
@@ -122,7 +131,8 @@ export const dataList =  [
         location : 'bangalore', 
         category : 'Bungalows',
         price: '28000',
-        image : '/assets/house3.jpg'
+        image : '/assets/house3.jpg',
+        Date : 12/15/2022
     },
     {
         id : 10,
@@ -130,7 +140,8 @@ export const dataList =  [
         location : 'chennai', 
         category : 'Bungalows',
         price: '32000',
-        image : '/assets/houses4.jpg'
+        image : '/assets/houses4.jpg',
+        Date : 12/11/2022
     },
     {
         id : 11,
@@ -138,7 +149,8 @@ export const dataList =  [
         location : 'delhi', 
         category : 'Bungalows',
         price: '22000',
-        image : '/assets/houses5.jpg'
+        image : '/assets/houses5.jpg',
+        Date : 12/10/2022
     },
     {
         id : 12,
@@ -146,7 +158,8 @@ export const dataList =  [
         location : 'ahmedabad', 
         category : 'Bungalows',
         price: '20000',
-        image : '/assets/house6.jpg'
+        image : '/assets/house6.jpg',
+        Date : 12/14/2022
     },
     {
         id : 13,
@@ -154,7 +167,8 @@ export const dataList =  [
         location : 'chennai', 
         category : 'Bungalows',
         price: '50000',
-        image : 'assets/villa3.jpg'
+        image : 'assets/villa3.jpg',
+        Date : 12/15/2022
     },
     {
         id : 14,
@@ -162,6 +176,7 @@ export const dataList =  [
         location : 'bhopal', 
         category : 'Bungalows',
         price: '15000',
-        image : '/assets/villa1.jpg'
+        image : '/assets/villa1.jpg',
+        Date : 12/8/2022
     }
 ]

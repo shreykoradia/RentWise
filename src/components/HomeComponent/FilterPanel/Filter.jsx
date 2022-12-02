@@ -3,6 +3,8 @@ import { category } from '../../../constants'
 import CheckBox from '../../Common/CheckBox/CheckBox'
 import FilterListToggle from '../../Common/FilterListToggle/FilterListToggle'
 import SliderTrack from '../../Common/Slider/SliderTrack'
+
+
 import './filter.css'
 
 const Filter = ({selectedCategory, selectToggle , locations , changeChecked , selectedPrice , changedPrice }) => {
@@ -28,9 +30,7 @@ const Filter = ({selectedCategory, selectToggle , locations , changeChecked , se
         <div className="input-group">
         <p className='label-range'>Price Range</p>
         <SliderTrack value={selectedPrice} changedPrice={changedPrice}/>
-
         </div>
-
     </div>
   )
 }
